@@ -1,0 +1,119 @@
+@media screen and (max-width: 767px) {
+    .container{
+        width: 95%;
+    }
+    .top-bar{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+    }
+    .top-bar .row{
+        display: unset;
+    }
+    .top-bar .list{
+        gap: 5px;
+        margin-top: 5px;
+        border-top: 1px solid var(--text-secondary);
+    }
+    .top-bar .list .item a{
+        padding: 0 5px;
+    }
+    .navbar{
+        top:0;
+        padding: 25px 30px 25px 0;
+        background-color: #FFF;
+    }
+
+    .navbar .navbar-left .logo{
+        width: 70%;
+    }
+    /* .navbar .navbar-left{
+        position: relative;
+    } */
+    .navbar .navbar-left .list{
+        background-color: var(--bg-primary);
+        display: unset;
+        position: absolute;
+        top: 128px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbar .navbar-left .list .item .link.active{
+        color: #FFF;
+    }
+    .navbar .navbar-left .list .item .link{
+        color: #FFF;
+    }
+    .navbar .navbar-left .list .item:nth-child(3) .link span{
+        display: none;
+    }
+    .navbar .navbar-left .list .item .dropdown{
+        display: none;
+        position: unset;
+        background-color: transparent;
+        box-shadow: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: 1s ease-in-out;
+  
+    }
+    .navbar .navbar-left .list .item .dropdown .dropdown-item .dropdown-link{
+        color: #FFF;
+    }
+    .navbar .navbar-left .list .item:hover .dropdown{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    #button-toggle{
+        display: block;
+    }
+    .navbar #toggle:checked +.list{
+        opacity: 1;
+        visibility: visible;
+    }
+    .header{
+        background-position: right;
+    }
+    .header-content h1{
+        font-size: 20px;
+    }
+    .header-content p{
+        font-size: 25px;
+    }
+    .sec-banner .row{
+        flex-wrap: wrap;
+    }
+
+    /* start product section */
+    .products .items .item{
+        width: 31%;
+    }
+     /* end product section */
+}
+
+@media screen and (max-width:575px){
+    .header{
+        height: 60vh;
+    }
+    .products .items .item{
+        width: 100%;
+    }
+    .products .control .list{
+        margin-bottom: 0.5em;
+    }
+    .footer .contact{
+        width:100%;
+        justify-content: unset;
+    }
+    .footer .categories,.footer .help{
+        width: 100%;
+    } 
+    
+}
